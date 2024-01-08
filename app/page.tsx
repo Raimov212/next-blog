@@ -25,9 +25,9 @@ export default function Home() {
   const [btn, setBtn] = useState<boolean>(true);
   const { status } = useSession();
 
-  if (status === "unauthenticated") {
-    return redirect("/login");
-  }
+  // if (status === "unauthenticated") {
+  //   return redirect("/login");
+  // }
 
   return (
     <div className="flex justify-between items-center min-h-[90vh]">
